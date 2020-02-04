@@ -1,0 +1,1 @@
+localStorage.setItem("ID", "{name: "Blue Copter", image: "img/blue copter.jpg"}")

@@ -1,0 +1,23 @@
+<%- include ("partials/header") %>
+<link rel="stylesheet" type="text/css" href="../newStyle.css">
+
+<div class="new-content">
+    <div class="container new-form">
+        <h1>Create a new ad</h1>
+        
+        <form class="input-form" action="/helicopters" method="POST">
+            <input type="text" name="name" placeholder="name" required>
+            <input type="text" name="image" placeholder="image URL" required>
+            <button>Submit!</button>
+        </form>
+        <div class="back-form">
+            <button> <a href="/helicopters">Back to all Copters</a> </button>
+            <button> <a href="/">Back Home</a> </button>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<%- include ("partials/footer") %>

@@ -1,0 +1,37 @@
+<%- include ("partials/header") %>
+<link rel="stylesheet" type="text/css" href="helicoptersStyle.css">
+
+
+
+<div class="background-img-container">
+    <div class="top-content">
+        <h1>Select your favorit helicopter</h1>
+        <p>View our selection from all over the world</p>
+        <button class="btn"> <a href="/helicopters/new">Add new helicopter</a> </button>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Out Most Popular Helicopters</h3>
+    <div class="mid-content">
+        <% copters.forEach(function(copters){ %>
+            <div class="card">
+                <img src="<%= copters.image %>" alt="" class="slike-copter">
+                <div class="card-content">
+                    <h4 class=><%= copters.name %></h4> 
+                    <button class="r-btn">Reserve</button>
+                    <button class="x-btn"><i class="fas fa-trash-alt"></i> Trash</button>
+                </div>
+              </div>
+        <% }) %>
+    </div>
+</div>
+
+
+<div class="low-content">
+    <button class="link-button"> <a href="/">Home page</a> </button>
+</div>
+
+
+
+<%- include ("partials/footer") %>
