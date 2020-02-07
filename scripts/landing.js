@@ -33,15 +33,17 @@ $(".card").on("click", ".r-btn", function(event){
     $(this).parent().fadeOut(500, () => {
         $(this).remove();
     });
+    $(this).parent().parent().addClass("card-fade");
+
     event.stopPropagation();
 });
 
 
 
-$(".x-btn").click( function(){
-    var slike = $(".slike-copter");
-    for(var i = 0; i < slike.length; i++){
-        $(this).remove()
-    }
-})
+$(".card").on("click", ".x-btn", function(event){
+    $(this).parent().parent().fadeOut(500, () => {
+        $(this).remove();
+    });
+    event.stopPropagation();
+});
 

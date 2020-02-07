@@ -11,6 +11,7 @@ body{
 .container{
     width: 1200px;
     margin: 0 auto;
+    
 }
 .background-img-container{
     background-image: url(img/coptercover.jpeg);
@@ -58,7 +59,8 @@ body{
 
 .mid-content{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 .container h3{
     text-align: center;
@@ -89,7 +91,6 @@ body{
 
   .x-btn,
   .r-btn {
-    background-color: rgba(185, 185, 185, 0.432);
     border: none; 
     color: white;
     padding: 6px 10px; 
@@ -100,8 +101,15 @@ body{
     transition: .1s linear;
     
   }
-  .r-btn:hover{
+  .x-btn{
+    background-color: rgba(163, 162, 162, 0.432);
+  }
+  .r-btn{
       background-color: rgb(97, 196, 97);
+  }
+  .r-btn:hover{
+      background-color: rgb(118, 238, 118);
+
   }
   .x-btn:hover{
     background-color:rgb(255, 82, 82);
